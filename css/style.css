@@ -1,0 +1,44 @@
+body {
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  background: #1abc9c;
+}
+
+.buttons {
+  width: 100%;
+  margin: 0 auto;
+  position: absolute;
+  top: 20%;
+  text-align: center;
+}
+
+.buttons .button {
+  text-align: center;
+  margin: 0 auto;
+  width: 20%;
+  background: transparent;
+  border: none;
+  outline: none;
+  visibility: visible;
+}
+
+.buttons .button h1 {
+  position: absolute;
+  font-family: "Pacifico", cursive;
+  font-size: 4vw;
+}
+
+.buttons .button i.fa-home {
+  overflow: hidden;
+  opacity: .0;
+  color: black;
+  position: absolute;
+  top: 0%;
+  left: 12%;
+  font-size: 6vw;
+}
+
+.buttons .button.button-active {
+  color: #1abc9c;
+}
