@@ -1,6 +1,6 @@
 // colors:
 $turq: #1abc9c;
-$burnt: #bc3a1a;
+$cloud: #ecf0f1;
 
 // fonts: 
 $pacifico: 'Pacifico', cursive;
@@ -20,8 +20,6 @@ body {
   text-align: center;
   
   .button {
-    text-align: center;
-    margin: 0 auto;
     width: 20%;
     background: transparent;
     border: none;
@@ -30,20 +28,47 @@ body {
     
     h1 {
       position: absolute;
+      padding: 0px;
+      line-height: 4.5vw;
+      top: 0%;
       font: {
         family: $pacifico;
         size: 4vw;
+      };
+      transition: .5s;
+      
+      &:hover {
+        border-bottom: solid .2vw $cloud;
       }
     }
     
-    i.fa-home {
+    i {
       overflow: hidden;
       opacity: .0;
-      color: black;
+      color: $cloud;
       position: absolute;
-      top: 0%;
-      left: 12%;
       font-size: 6vw;
+      
+      &.fa-home {
+        left: 12%;
+        top: -500%;
+      }
+      
+      &.fa-info-circle {
+        left: 33.8%;
+        top: -500%;
+      }
+      
+      &.fa-folder-open-o {
+        left: 51%;
+        top: -500%;
+      }
+      
+      &.fa-paper-plane-o {
+        left: 76.2%;
+        top: -500%;
+      }
+      
     }
     
     &.button-active {

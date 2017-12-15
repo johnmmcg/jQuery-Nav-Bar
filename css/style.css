@@ -14,8 +14,6 @@ body {
 }
 
 .buttons .button {
-  text-align: center;
-  margin: 0 auto;
   width: 20%;
   background: transparent;
   border: none;
@@ -25,18 +23,44 @@ body {
 
 .buttons .button h1 {
   position: absolute;
+  padding: 0px;
+  line-height: 4.5vw;
+  top: 0%;
   font-family: "Pacifico", cursive;
   font-size: 4vw;
+  transition: .5s;
+}
+
+.buttons .button h1:hover {
+  border-bottom: solid 0.2vw #ecf0f1;
+}
+
+.buttons .button i {
+  overflow: hidden;
+  opacity: .0;
+  color: #ecf0f1;
+  position: absolute;
+  font-size: 6vw;
 }
 
 .buttons .button i.fa-home {
-  overflow: hidden;
-  opacity: .0;
-  color: black;
-  position: absolute;
-  top: 0%;
   left: 12%;
-  font-size: 6vw;
+  top: -500%;
+}
+
+.buttons .button i.fa-info-circle {
+  left: 33.8%;
+  top: -500%;
+}
+
+.buttons .button i.fa-folder-open-o {
+  left: 51%;
+  top: -500%;
+}
+
+.buttons .button i.fa-paper-plane-o {
+  left: 76.2%;
+  top: -500%;
 }
 
 .buttons .button.button-active {
